@@ -1,6 +1,7 @@
 # Personal Portfolio
 
 My portfolio site: a single-page React site showcasing projects, experience, and more.
+Built with Claude Code. Content is my own.
 
 ## Structure
 
