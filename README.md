@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-My (Isabel's) portfolio site: a single-page React site showcasing projects, experience, and more.
+My portfolio site: a single-page React site showcasing projects, experience, and more.
 
 ## Structure
 
