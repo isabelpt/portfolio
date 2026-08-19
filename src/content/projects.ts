@@ -7,7 +7,7 @@ export const projects: Project[] = [
     id: 'nwsl-mls-demand',
     title: 'Consumer Demand Analytics Platform',
     tagline: 'NWSL & MLS Market Study',
-    status: 'In progress',
+    // status: 'In progress',
     techStack: ['Python', 'NLP', 'Regression'],
     description:
       'Working with large, diverse datasets (transit, demographic, media, and venue data) to build predictive models of fan attendance and consumer demand for a professional sports league. Applies statistical and spatial modeling to translate raw data into decision-ready insights on market and venue strategy.',

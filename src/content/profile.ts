@@ -24,7 +24,8 @@ export const profile = {
       detail: 'Competing at tournaments across the East Coast and managing travel and tournament logistics.',
     },
     {
-      label: ''
+      label: 'Casual Runner & Strava Enthusiast',
+      detail: 'Training for and running half-marathons, while overanalyzing training data.',
     },
   ],
 }
