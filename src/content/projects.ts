@@ -24,8 +24,8 @@ export const projects: Project[] = [
     description:
       'Synthesized and cleaned multi-source data to identify inflection points in flood risk, building interactive JavaScript visualizations that communicate complex findings to non-technical audiences.',
     links: [
-      // { label: 'Live scrollytelling', url: '' },
-      // { label: 'GitHub', url: '' },
+      { label: 'Live scrollytelling', url: 'https://isabelpt.github.io/MassClimate/' },
+      { label: 'GitHub', url: 'https://github.com/isabelpt/MassClimate' },
     ],
   },
   {
@@ -34,9 +34,30 @@ export const projects: Project[] = [
     tagline: 'Applied Hydroclimatology Lab, Dartmouth College',
     techStack: ['R', 'Data Pipelines', 'Statistical Modeling'],
     description:
-      'Second author on the statewide climate assessment. Built and maintained R data pipelines to ingest, clean, and validate large, noisy real-world datasets, and distilled findings into 20+ publication-ready figures and reports for technical and non-technical stakeholders.',
+      'Second author on the statewide climate assessment. Built and maintained R data pipelines to ingest, clean, and validate large, noisy real-world datasets, and distilled findings into 20+ publication-ready figures and reports for technical and non-technical stakeholders. \n Report coming soon.',
     links: [
       // { label: 'Read the report', url: '' },
+    ],
+  },
+  {
+    id: 'exposome',
+    title: 'Prevalence of PFOS in the Bay Area Exposome',
+    tagline: 'Snyder Lab, Stanford University',
+    techStack: ['R', 'Python'],
+    description: 'Co-authored original study on the prevalence of PFOS in the Bay Area exposome. Collected longitudinal environmental sample data, processed the samplesthrough LC-MS and analyzed results to identify potential exposure pathways and health risks.',
+    links: [
+      { label: 'Read the paper', url: 'https://www.linkedin.com/in/isabelpradotucker/overlay/Position/2885137786/treasury/?profileId=ACoAAC-N4LIBOH47eb1p-XCWlN7_xZA6cOPUeR8' },
+    ],
+  },
+  {
+    id: 'biomarker-discovery',
+    title: 'Ulcerative Colitis Metabolic Profiling',
+    tagline: 'Snyder Lab, Stanford University',
+    techStack: ['R (metaboAnalyst)', 'Statistical Modeling (PCA, sPLS-DS, logistic regression)'],
+    description:
+      'Investigated metabolic pathways associated with ulcerative colitis using raw LC-MS data and machine learning techniques.',
+    links: [
+      { label: 'Read the paper', url: 'https://github.com/isabelpt/UC-Metabolomic-Profiling/blob/main/Prado-Tucker_Isabel_Poster.pdf' },
     ],
   },
 ]
