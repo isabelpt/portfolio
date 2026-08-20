@@ -9,6 +9,7 @@ export interface Project {
   tagline: string
   status?: string
   featured?: boolean
+  award?: boolean
   techStack: string[]
   description: string
   links: ProjectLink[]

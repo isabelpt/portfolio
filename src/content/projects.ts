@@ -21,6 +21,8 @@ export const projects: Project[] = [
     id: 'heavy-rain-high-water',
     title: 'Heavy Rain & High Water',
     tagline: '2026 CAUSE Data Scrollytelling Contest Winner',
+    featured: true,
+    award: true,
     techStack: ['R', 'JavaScript (D3.js)', 'HTML/CSS'],
     description:
       'Synthesized and cleaned multi-source data to identify inflection points in flood risk, building interactive JavaScript visualizations that communicate complex findings to non-technical audiences.',
