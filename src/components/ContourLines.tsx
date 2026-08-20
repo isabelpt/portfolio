@@ -1,8 +1,7 @@
 // Faint topographic-style contour map, purely decorative.
 // Evokes the geospatial/flood-risk mapping work without being literal about it.
-// Built programmatically (elevation "hills" as nested wobbly rings, plus a few
-// flowing valley lines) rather than hand-drawn, so it reads as an actual map
-// rather than a generic squiggle.
+// Built programmatically as elevation "hills" (nested wobbly rings) rather
+// than hand-drawn, so it reads as an actual map rather than a generic squiggle.
 
 type Point = [number, number]
 
@@ -83,17 +82,6 @@ const hills: Hill[] = [
   },
 ]
 
-const valleyLines = [
-  { d: 'M-50,120 C 150,60 300,160 480,110 S 780,60 1050,130', opacity: 0.06 },
-  { d: 'M-50,200 C 180,150 320,240 520,190 S 800,150 1050,220', opacity: 0.07 },
-  { d: 'M-50,290 C 160,230 340,320 540,270 S 820,230 1050,300', opacity: 0.08 },
-  { d: 'M-50,370 C 170,320 330,400 530,350 S 810,310 1050,380', opacity: 0.05 },
-  { d: 'M-50,560 C 190,500 350,590 560,540 S 830,500 1050,570', opacity: 0.06 },
-  { d: 'M-50,630 C 200,580 360,660 570,610 S 840,570 1050,640', opacity: 0.07 },
-  { d: 'M-50,700 C 210,650 370,730 580,680 S 850,640 1050,710', opacity: 0.08 },
-  { d: 'M-50,770 C 220,720 380,800 590,750 S 860,710 1050,780', opacity: 0.06 },
-]
-
 export default function ContourLines() {
   return (
     <svg
@@ -104,9 +92,6 @@ export default function ContourLines() {
       aria-hidden="true"
     >
       <g stroke="var(--color-navy-deep)">
-        {valleyLines.map((line, i) => (
-          <path key={`valley-${i}`} d={line.d} strokeWidth="1" opacity={line.opacity} />
-        ))}
         {hills.map((hill, hi) =>
           Array.from({ length: hill.rings }).map((_, ri) => {
             const r = hill.baseR + ri * hill.spacing
