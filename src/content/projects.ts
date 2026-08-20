@@ -47,7 +47,7 @@ export const projects: Project[] = [
     title: 'Prevalence of PFOS in the Bay Area Exposome',
     tagline: 'Snyder Lab, Stanford University',
     techStack: ['R', 'Python'],
-    description: 'Co-authored original study on the prevalence of PFOS in the Bay Area exposome. Collected longitudinal environmental sample data, processed the samplesthrough LC-MS and analyzed results to identify potential exposure pathways and health risks.',
+    description: 'Co-authored original study on the prevalence of PFOS in the Bay Area exposome. Collected longitudinal environmental sample data, processed the samples through LC-MS and analyzed results to identify potential exposure pathways and health risks.',
     links: [
       { label: 'Read the paper', url: 'https://www.linkedin.com/in/isabelpradotucker/overlay/Position/2885137786/treasury/?profileId=ACoAAC-N4LIBOH47eb1p-XCWlN7_xZA6cOPUeR8' },
     ],
