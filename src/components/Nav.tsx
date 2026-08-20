@@ -5,7 +5,6 @@ const links = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
-  { href: '#writing', label: 'Substack' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -44,7 +43,7 @@ export default function Nav() {
         <a
           href={profile.resumeUrl}
           download
-          className="hidden rounded-full bg-[var(--color-navy)] px-4 py-2 font-sans text-sm font-medium text-white transition-colors hover:bg-[var(--color-navy-deep)] md:inline-block"
+          className="hard-shadow hidden border border-[var(--color-navy-deep)] bg-[var(--color-navy)] px-4 py-2 font-sans text-sm font-medium text-white md:inline-block"
         >
           Download Resume
         </a>
@@ -52,7 +51,7 @@ export default function Nav() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-md border border-[var(--color-line)] p-2 text-[var(--color-navy-deep)] md:hidden"
+          className="border border-[var(--color-line)] p-2 text-[var(--color-navy-deep)] md:hidden"
           aria-label="Toggle menu"
           aria-expanded={open}
         >
@@ -76,7 +75,7 @@ export default function Nav() {
               <a
                 href={profile.resumeUrl}
                 download
-                className="inline-block rounded-full bg-[var(--color-navy)] px-4 py-2 text-white"
+                className="inline-block border border-[var(--color-navy-deep)] bg-[var(--color-navy)] px-4 py-2 text-white"
               >
                 Download Résumé
               </a>

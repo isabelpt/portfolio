@@ -1,17 +1,17 @@
 import { profile } from '../content/profile'
+import SectionHeading from './SectionHeading'
 
 export default function Contact() {
   return (
-    <section id="contact" className="mx-auto max-w-5xl px-6 py-16">
-      <div className="rounded-2xl bg-[var(--color-navy-deep)] px-8 py-12 text-center md:px-16">
+    <section id="contact" className="mx-auto max-w-5xl border-t border-[var(--color-line)] px-6 py-16">
+      <SectionHeading index="04" title="Contact" />
+
+      <div className="mt-8 border border-[var(--color-navy-deep)] bg-[var(--color-navy-deep)] px-8 py-12 text-center md:px-16">
         <h2 className="font-serif text-3xl font-semibold text-white">Let’s talk</h2>
-        {/* <p className="mx-auto mt-3 max-w-md font-sans text-sm text-white/70">
-          Open to data and geospatial oriented internships — happy to share more about any project above.
-        </p> */}
         <div className="mt-6 flex flex-wrap justify-center gap-3 font-sans text-sm">
           <a
             href={`mailto:${profile.email}`}
-            className="rounded-full bg-[var(--color-lilac)] px-5 py-2.5 font-medium text-[var(--color-navy-deep)] transition-colors hover:bg-white"
+            className="border border-[var(--color-lilac)] bg-[var(--color-lilac)] px-5 py-2.5 font-medium text-[var(--color-navy-deep)] transition-colors hover:bg-transparent hover:text-white"
           >
             {profile.email}
           </a>
@@ -19,7 +19,7 @@ export default function Contact() {
             href={profile.links.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-white/30 px-5 py-2.5 font-medium text-white transition-colors hover:border-white"
+            className="border border-white/30 px-5 py-2.5 font-medium text-white transition-colors hover:border-white"
           >
             LinkedIn
           </a>
@@ -27,7 +27,7 @@ export default function Contact() {
             href={profile.links.github}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-white/30 px-5 py-2.5 font-medium text-white transition-colors hover:border-white"
+            className="border border-white/30 px-5 py-2.5 font-medium text-white transition-colors hover:border-white"
           >
             GitHub
           </a>

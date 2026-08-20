@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import 'tailwindcss';
 
 @theme {
   --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --color-ink: #1b2430;
   --color-paper: #fbfaf8;
@@ -28,4 +29,23 @@ body {
 ::selection {
   background-color: var(--color-lilac-soft);
   color: var(--color-navy-deep);
+}
+
+/* Brutalist offset shadow — used on cards/buttons instead of soft blur shadows */
+.hard-shadow {
+  box-shadow: 5px 5px 0 0 var(--color-navy-deep);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.hard-shadow:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 0 var(--color-navy-deep);
+}
+
+.hard-shadow-lilac {
+  box-shadow: 5px 5px 0 0 var(--color-lilac);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+.hard-shadow-lilac:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0 0 var(--color-lilac);
 }

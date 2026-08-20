@@ -1,13 +1,11 @@
 import { projects } from '../content/projects'
 import ProjectCard from './ProjectCard'
+import SectionHeading from './SectionHeading'
 
 export default function Projects() {
   return (
-    <section id="projects" className="mx-auto max-w-5xl px-6 py-16">
-      <h2 className="font-serif text-3xl font-semibold text-[var(--color-navy-deep)]">Projects</h2>
-      {/* <p className="mt-2 max-w-2xl font-sans text-sm text-[var(--color-ink)]/70">
-        A selection of research and projects I've been working on.
-      </p> */}
+    <section id="projects" className="mx-auto max-w-5xl border-t border-[var(--color-line)] px-6 py-16">
+      <SectionHeading index="02" title="Projects" />
 
       <div className="mt-8 grid gap-6 md:grid-cols-3">
         {projects.map((project) => (

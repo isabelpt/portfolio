@@ -4,7 +4,8 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
-import Writing from './components/Writing'
+// Substack "Writing" section is disabled for now — see src/components/Writing.tsx
+// and api/substack.ts. Re-add <Writing /> below (and the nav link) once ready.
 import Contact from './components/Contact'
 
 function App() {
@@ -16,7 +17,6 @@ function App() {
         <About />
         <Projects />
         <Experience />
-        <Writing />
         <Contact />
       </main>
       <Analytics />
