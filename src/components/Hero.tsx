@@ -2,13 +2,6 @@ import { profile } from '../content/profile'
 import { projects } from '../content/projects'
 import Tag from './Tag'
 
-function truncate(text: string, max: number) {
-  const clean = text.replace(/\s+/g, ' ').trim()
-  if (clean.length <= max) return clean
-  const cut = clean.slice(0, max)
-  return `${cut.slice(0, cut.lastIndexOf(' ')).trim()}…`
-}
-
 export default function Hero() {
   const featuredProjects = projects.filter((p) => p.featured)
 
@@ -72,29 +65,11 @@ export default function Hero() {
                   {project.title}
                 </h3>
                 <p className="mt-1 font-sans text-xs text-[var(--color-ink)]/60">{project.tagline}</p>
-                <p className="mt-3 font-sans text-sm leading-relaxed text-[var(--color-ink)]/80">
-                  {truncate(project.description, 140)}
-                </p>
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {project.techStack.map((tech) => (
                     <Tag key={tech}>{tech}</Tag>
                   ))}
                 </div>
-                {project.links.length > 0 && (
-                  <div className="mt-4 flex flex-wrap gap-4 border-t border-[var(--color-line)] pt-3 font-sans text-sm">
-                    {project.links.map((link) => (
-                      <a
-                        key={link.label}
-                        href={link.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="font-medium text-[var(--color-navy)] underline decoration-[var(--color-lilac)] decoration-2 underline-offset-4 hover:text-[var(--color-navy-deep)]"
-                      >
-                        {link.label} ↗
-                      </a>
-                    ))}
-                  </div>
-                )}
               </div>
             ))}
           </div>
