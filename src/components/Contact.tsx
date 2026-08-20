@@ -36,7 +36,17 @@ export default function Contact() {
 
       <footer className="mt-10 flex flex-col items-center justify-between gap-3 font-sans text-xs text-[var(--color-ink)]/50 md:flex-row">
         <p>© {new Date().getFullYear()} {profile.name}</p>
-        <p>Built with React &amp; Tailwind, deployed on Vercel.</p>
+        <p>
+          Built with React &amp; Tailwind, deployed on Vercel —{' '}
+          <a
+            href="https://github.com/isabelpt/portfolio"
+            target="_blank"
+            rel="noreferrer"
+            className="underline decoration-[var(--color-lilac)] decoration-2 underline-offset-4 hover:text-[var(--color-ink)]"
+          >
+            source
+          </a>
+        </p>
       </footer>
     </section>
   )

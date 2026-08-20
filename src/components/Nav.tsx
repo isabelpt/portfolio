@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { profile } from '../content/profile'
+import Sparkline from './Sparkline'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -26,8 +27,9 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="#top" className="font-serif text-lg font-semibold text-[var(--color-navy-deep)]">
+        <a href="#top" className="flex items-center gap-2.5 font-serif text-lg font-semibold text-[var(--color-navy-deep)]">
           {profile.name}
+          <Sparkline />
         </a>
 
         <ul className="hidden items-center gap-8 font-sans text-sm text-[var(--color-ink)] md:flex">

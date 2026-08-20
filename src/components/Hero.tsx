@@ -1,13 +1,15 @@
 import { profile } from '../content/profile'
 import { projects } from '../content/projects'
 import Tag from './Tag'
+import ContourLines from './ContourLines'
 
 export default function Hero() {
   const featuredProjects = projects.filter((p) => p.featured)
 
   return (
-    <section id="top" className="mx-auto flex min-h-screen max-w-5xl items-center px-6 py-16">
-      <div className="grid w-full gap-12 md:grid-cols-5">
+    <section id="top" className="relative flex min-h-screen items-center overflow-hidden px-6 py-16">
+      <ContourLines />
+      <div className="relative mx-auto grid w-full max-w-5xl gap-12 md:grid-cols-5">
         <div className="flex flex-col justify-center md:col-span-3">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-[var(--color-lilac)]">
             {profile.location}
