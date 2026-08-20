@@ -52,7 +52,7 @@ export default function Hero() {
         <div className="md:col-span-2 md:mt-1">
           <div className="space-y-5">
             {featuredProjects.map((project) => (
-              <div key={project.id} className="border border-[var(--color-navy-deep)] p-5">
+              <div key={project.id} className="border border-[var(--color-navy-deep)] bg-[var(--color-paper)] p-5">
                 <div className="flex items-center justify-between gap-2">
                   <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--color-lilac)]">
                     {project.award ? 'Award-Winning' : 'Currently Building'}
