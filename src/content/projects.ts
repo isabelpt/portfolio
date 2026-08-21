@@ -29,6 +29,10 @@ export const projects: Project[] = [
     links: [
       { label: 'Live scrollytelling', url: 'https://isabelpt.github.io/MassClimate/' },
       { label: 'GitHub', url: 'https://github.com/isabelpt/MassClimate' },
+      {
+        label: 'Dartmouth News',
+        url: 'https://qss.dartmouth.edu/news/2026/08/isabel-prado-tucker-wins-cause-data-scrollytelling-contest',
+      },
     ],
   },
   {
