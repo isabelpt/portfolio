@@ -7,8 +7,6 @@ export const projects: Project[] = [
     id: 'nwsl-mls-demand',
     title: 'Transit Accessibility & Attendance in the NWSL',
     tagline: 'NWSL Market Study pt. 2',
-    // status: 'In progress',
-    featured: true,
     techStack: ['Python', 'Regression', 'Transit/Spatial Modeling', 'Synthetic Control'],
     description:
       'Working with large, diverse datasets (transit, demographic, media, and venue data) to build predictive models of fan attendance and consumer demand to analyze Gotham FC\'s move to Queens. Translating statistical and spatial modeling into decision-ready insights on market and venue strategy.',
@@ -22,8 +20,6 @@ export const projects: Project[] = [
     id: 'nwsl-mls-demand',
     title: 'Breaking Down NWSL Growth',
     tagline: 'NWSL Market Study pt. 1',
-    // status: 'In progress',
-    featured: true,
     techStack: ['Python', 'NLP', 'Regression'],
     description:
       'Drawing from media articles, social media data, and season and game level data to investigate the key drivers of the NWSL\'s growth in comparison to legacy men\'s leagues. Tracked the development of a durable, women\'s-specific sports culture.',
