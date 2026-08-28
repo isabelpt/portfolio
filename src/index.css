@@ -49,3 +49,19 @@ body {
   transform: translate(-3px, -3px);
   box-shadow: 8px 8px 0 0 var(--color-lilac);
 }
+
+/* Duotone the portrait into the navy/paper palette so it reads as part of
+   the design rather than the site's one full-color photograph. */
+.portrait img {
+  filter: grayscale(1) contrast(0.95) brightness(0.9);
+}
+
+.portrait::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-navy);
+  mix-blend-mode: color;
+  opacity: 0.7;
+  pointer-events: none;
+}

@@ -17,7 +17,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    id: 'nwsl-mls-demand',
+    id: 'nwsl-growth',
     title: 'Breaking Down NWSL Growth',
     tagline: 'NWSL Market Study pt. 1',
     techStack: ['Python', 'NLP', 'Regression'],
