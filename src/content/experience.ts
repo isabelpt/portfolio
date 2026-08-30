@@ -20,6 +20,16 @@ export const experience: ExperienceItem[] = [
       'Managed and cleaned high-dimensional environmental datasets in Python and R, applying machine learning and statistical methods (PCA, ANOVA, sPLS-DA) to extract insights across 116 chemical compound features.',
       'Co-authored an original regional environmental toxin study, structuring raw sample data into a clean schema and communicating technical findings.',
     ],
+    links: [
+      {
+        label: 'PFOS in the Bay Area exposome (paper)',
+        url: 'https://www.linkedin.com/in/isabelpradotucker/overlay/Position/2885137786/treasury/?profileId=ACoAAC-N4LIBOH47eb1p-XCWlN7_xZA6cOPUeR8',
+      },
+      {
+        label: 'Ulcerative colitis metabolic profiling (poster)',
+        url: 'https://github.com/isabelpt/UC-Metabolomic-Profiling/blob/main/Prado-Tucker_Isabel_Poster.pdf',
+      },
+    ],
   },
   {
     org: 'Kode with Klossy',

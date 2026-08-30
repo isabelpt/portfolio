@@ -8,8 +8,12 @@ export const projects: Project[] = [
     title: 'Transit Accessibility & Attendance in the NWSL',
     tagline: 'NWSL Market Study pt. 2',
     techStack: ['Python', 'Regression', 'Transit/Spatial Modeling', 'Synthetic Control'],
+    thumbnail: {
+      src: '/thumbnails/gotham-etihad.webp',
+      alt: 'Unit chart of Etihad Park seating, each dot one block of fans, filled to show projected attendance against the stadium’s 25,000 capacity.',
+    },
     description:
-      'Working with large, diverse datasets (transit, demographic, media, and venue data) to build predictive models of fan attendance and consumer demand to analyze Gotham FC\'s move to Queens. Translating statistical and spatial modeling into decision-ready insights on market and venue strategy.',
+      "Built transit isochrones and a synthetic control to project Gotham FC's move filling 60–91% of Etihad Park.",
     links: [
       //{ label: 'Write-up', url: '' },
       {label: 'Website', url: 'https://gotham-at-etihad.vercel.app/'},
@@ -21,8 +25,12 @@ export const projects: Project[] = [
     title: 'Breaking Down NWSL Growth',
     tagline: 'NWSL Market Study pt. 1',
     techStack: ['Python', 'NLP', 'Regression'],
+    thumbnail: {
+      src: '/thumbnails/nwsl-growth.webp',
+      alt: 'Stacked bar chart of NWSL headline topic mix from 2012 to 2024, showing coverage volume nearly tripling since 2018 across team/league, coaching, schedule, and how-to-watch topics.',
+    },
     description:
-      'Drawing from media articles, social media data, and season and game level data to investigate the key drivers of the NWSL\'s growth in comparison to legacy men\'s leagues. Tracked the development of a durable, women\'s-specific sports culture.',
+      'Topic-modeled 8,328 headlines to show NWSL media coverage has nearly tripled since 2018.',
     links: [
       //{ label: 'Write-up', url: '' },
       {label: 'Website', url: 'https://nwsl-growth.vercel.app/'},
@@ -36,8 +44,12 @@ export const projects: Project[] = [
     featured: true,
     award: true,
     techStack: ['R', 'JavaScript (D3.js)', 'HTML/CSS'],
+    thumbnail: {
+      src: '/thumbnails/heavy-rain.webp',
+      alt: 'Line chart of spatially averaged extreme precipitation in the Northeast, 1901 to 2024, with the 30-year mean turning from grey to red after the 1992 changepoint.',
+    },
     description:
-      'Synthesized and cleaned multi-source data to identify inflection points in flood risk, building interactive JavaScript visualizations that communicate complex findings to non-technical audiences.',
+      'Pinpointed 1992 as the changepoint when Northeast extreme rainfall started climbing.',
     links: [
       { label: 'Live scrollytelling', url: 'https://isabelpt.github.io/MassClimate/' },
       { label: 'GitHub', url: 'https://github.com/isabelpt/MassClimate' },
@@ -45,38 +57,6 @@ export const projects: Project[] = [
         label: 'Dartmouth News',
         url: 'https://qss.dartmouth.edu/news/2026/08/isabel-prado-tucker-wins-cause-data-scrollytelling-contest',
       },
-    ],
-  },
-  {
-    id: 'mass-climate-assessment',
-    title: '2026 Massachusetts Climate Assessment',
-    tagline: 'Applied Hydroclimatology Lab, Dartmouth College',
-    techStack: ['R', 'Data Pipelines', 'Statistical Modeling'],
-    description:
-      'Second author on the statewide climate assessment. Built and maintained R data pipelines to ingest, clean, and validate large, noisy real-world datasets, and distilled findings into 20+ publication-ready figures and reports for technical and non-technical stakeholders. \n Report coming soon.',
-    links: [
-      // { label: 'Read the report', url: '' },
-    ],
-  },
-  {
-    id: 'exposome',
-    title: 'Prevalence of PFOS in the Bay Area Exposome',
-    tagline: 'Snyder Lab, Stanford University',
-    techStack: ['R', 'Python'],
-    description: 'Co-authored original study on the prevalence of PFOS in the Bay Area exposome. Collected longitudinal environmental sample data, processed the samples through LC-MS and analyzed results to identify potential exposure pathways and health risks.',
-    links: [
-      { label: 'Read the paper', url: 'https://www.linkedin.com/in/isabelpradotucker/overlay/Position/2885137786/treasury/?profileId=ACoAAC-N4LIBOH47eb1p-XCWlN7_xZA6cOPUeR8' },
-    ],
-  },
-  {
-    id: 'biomarker-discovery',
-    title: 'Ulcerative Colitis Metabolic Profiling',
-    tagline: 'Snyder Lab, Stanford University',
-    techStack: ['R (metaboAnalyst)', 'Statistical Modeling (PCA, sPLS-DS, logistic regression)'],
-    description:
-      'Investigated metabolic pathways associated with ulcerative colitis using raw LC-MS data and machine learning techniques.',
-    links: [
-      { label: 'Read the poster', url: 'https://github.com/isabelpt/UC-Metabolomic-Profiling/blob/main/Prado-Tucker_Isabel_Poster.pdf' },
     ],
   },
 ]

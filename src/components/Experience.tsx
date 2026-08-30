@@ -16,14 +16,32 @@ export default function Experience() {
                 {item.location} · {item.dates}
               </p>
             </div>
-            <ul className="md:col-span-3 space-y-2 font-sans text-sm leading-relaxed text-[var(--color-ink)]/80">
-              {item.bullets.map((bullet, i) => (
-                <li key={i} className="flex gap-2">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-[var(--color-lilac)]" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
+            <div className="md:col-span-3">
+              <ul className="space-y-2 font-sans text-sm leading-relaxed text-[var(--color-ink)]/80">
+                {item.bullets.map((bullet, i) => (
+                  <li key={i} className="flex gap-2">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-[var(--color-lilac)]" />
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {item.links && item.links.length > 0 && (
+                <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 font-sans text-sm">
+                  {item.links.map((link) => (
+                    <a
+                      key={link.label}
+                      href={link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-medium text-[var(--color-navy)] underline decoration-[var(--color-lilac)] decoration-2 underline-offset-4 hover:text-[var(--color-navy-deep)]"
+                    >
+                      {link.label} ↗
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>
