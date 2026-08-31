@@ -29,7 +29,7 @@ export const projects: Project[] = [
     id: 'nwsl-mls-demand',
     title: 'Transit Accessibility & Attendance in the NWSL',
     tagline: 'NWSL Market Study pt. 2',
-    techStack: ['Python', 'Regression', 'Transit/Spatial Modeling', 'Synthetic Control'],
+    techStack: ['Python', 'Regression', 'Spatial Modeling'],
     thumbnail: {
       src: '/thumbnails/gotham-etihad.webp',
       alt: 'Unit chart of Etihad Park seating, each dot one block of fans, filled to show projected attendance against the stadium’s 25,000 capacity.',
