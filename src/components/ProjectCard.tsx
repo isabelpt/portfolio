@@ -45,7 +45,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
         <p className="mt-1 font-mono text-[11px] text-[var(--color-lilac)]">{project.tagline}</p>
 
-        <p className="mt-2 line-clamp-2 font-sans text-xs leading-relaxed text-[var(--color-ink)]/80">
+        <p className="mt-2 font-sans text-xs leading-relaxed text-[var(--color-ink)]/80">
           {project.description}
         </p>
 
@@ -58,7 +58,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         )}
 
         {project.links.length > 0 && (
-          <div className="mt-3 flex flex-wrap gap-3 font-sans text-xs">
+          <div className="mt-auto flex flex-wrap gap-3 pt-3 font-sans text-xs">
             {project.links.map((link) => (
               <a
                 key={link.label}

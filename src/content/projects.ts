@@ -59,5 +59,21 @@ export const projects: Project[] = [
       { label: 'GitHub', url: 'https://github.com/isabelpt/nwsl-growth-analysis'},
     ],
   },
-  
+  {
+    id: 'nwsl-trmnl',
+    title: 'NWSL Analytics for TRMNL',
+    tagline: 'Published on the TRMNL marketplace',
+    techStack: ['JavaScript (Cloudflare Workers)', 'Liquid', 'REST API'],
+    thumbnail: {
+      src: '/thumbnails/nwsl-trmnl.webp',
+      alt: 'E-ink display showing the NWSL table with form and a playoff cutoff line after 8th, beside recent results, xG over- and under-performers, and Goals Added leaders.',
+    },
+    description:
+      'Built a live NWSL standings and xG dashboard for e-ink, powered by a Cloudflare Worker.',
+    links: [
+      { label: 'TRMNL plugin', url: 'https://trmnl.com/recipes/466603' },
+      { label: 'GitHub', url: 'https://github.com/isabelpt/nwsl-analytics-trmnl' },
+    ],
+  },
+
 ]

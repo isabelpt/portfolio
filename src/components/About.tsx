@@ -32,23 +32,23 @@ export default function About() {
             Highlighted Coursework
           </h3>
           <div className="mt-4 space-y-2">
-            {coursework.current.map((course) => (
+            {coursework.highlighted.map((course) => (
               <div key={course} className="border-l-2 border-[var(--color-lilac-soft)] pl-4 font-sans text-sm text-[var(--color-ink)]/80">
                 {course}
               </div>
             ))}
           </div>
 
-          {coursework.upcoming.length > 0 && (
+          {coursework.current.length > 0 && (
             <div className="mt-6">
-              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--color-ink)]/40">
-                Upcoming
+              <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--color-ink)]/60">
+                Current
               </p>
               <div className="mt-3 space-y-2">
-                {coursework.upcoming.map((course) => (
+                {coursework.current.map((course) => (
                   <div
                     key={course}
-                    className="border-l-2 border-[var(--color-line)] pl-4 font-sans text-sm text-[var(--color-ink)]/60"
+                    className="border-l-2 border-[var(--color-line)] pl-4 font-sans text-sm text-[var(--color-ink)]/80"
                   >
                     {course}
                   </div>

@@ -11,9 +11,10 @@ export default function Contact() {
         <div className="mt-6 flex flex-wrap justify-center gap-3 font-sans text-sm">
           <a
             href={`mailto:${profile.email}`}
+            title={profile.email}
             className="border border-[var(--color-lilac)] bg-[var(--color-lilac)] px-5 py-2.5 font-medium text-[var(--color-navy-deep)] transition-colors hover:bg-transparent hover:text-white"
           >
-            {profile.email}
+            Email me
           </a>
           <a
             href={profile.links.linkedin}
@@ -32,6 +33,7 @@ export default function Contact() {
             GitHub
           </a>
         </div>
+        <p className="mt-5 break-all font-sans text-xs text-white/60">{profile.email}</p>
       </div>
 
       <footer className="mt-10 flex flex-col items-center justify-between gap-3 font-sans text-xs text-[var(--color-ink)]/50 md:flex-row">

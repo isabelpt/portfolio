@@ -11,6 +11,7 @@ export const skillGroups = [
       'Predictive Modeling',
       'Time-Series Analysis',
       'Data Visualization',
+      'GIS & Spatial Analysis',
     ],
   },
   {

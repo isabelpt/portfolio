@@ -79,7 +79,7 @@ export default function Nav() {
                 download
                 className="inline-block border border-[var(--color-navy-deep)] bg-[var(--color-navy)] px-4 py-2 text-white"
               >
-                Download Résumé
+                Download Resume
               </a>
             </li>
           </ul>

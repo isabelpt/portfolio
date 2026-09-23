@@ -7,7 +7,7 @@ export default function Projects() {
     <section id="projects" className="mx-auto max-w-5xl border-t border-[var(--color-line)] px-6 py-16">
       <SectionHeading index="02" title="Projects" />
 
-      <div className="mt-8 grid gap-6 md:grid-cols-3">
+      <div className="mt-8 grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

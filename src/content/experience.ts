@@ -3,7 +3,7 @@ import type { ExperienceItem } from '../types'
 export const experience: ExperienceItem[] = [
   {
     org: 'Applied Hydroclimatology Lab, Dartmouth College',
-    role: 'Research Assistant',
+    role: 'Research Assistant, Neukom Scholar',
     location: 'Hanover, NH',
     dates: '01/25 – Present',
     bullets: [
