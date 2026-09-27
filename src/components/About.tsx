@@ -1,5 +1,6 @@
 import { skillGroups } from '../content/skills'
 import { coursework } from '../content/coursework'
+import { honors } from '../content/honors'
 import SectionHeading from './SectionHeading'
 import Tag from './Tag'
 
@@ -56,6 +57,28 @@ export default function About() {
               </div>
             </div>
           )}
+
+          <h3 className="mt-10 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-[var(--color-lilac)]">
+            Honors
+          </h3>
+          <div className="mt-4 space-y-2">
+            {honors.map((honor) => (
+              <div key={honor.label} className="border-l-2 border-[var(--color-lilac-soft)] pl-4 font-sans text-sm text-[var(--color-ink)]/80">
+                {honor.url ? (
+                  <a
+                    href={honor.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline decoration-[var(--color-lilac)] underline-offset-4 hover:text-[var(--color-navy-deep)]"
+                  >
+                    {honor.label} ↗
+                  </a>
+                ) : (
+                  honor.label
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

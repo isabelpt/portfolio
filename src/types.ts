@@ -33,6 +33,11 @@ export interface ExperienceItem {
   links?: ProjectLink[]
 }
 
+export interface Honor {
+  label: string
+  url?: string
+}
+
 export interface SubstackPost {
   title: string
   link: string
