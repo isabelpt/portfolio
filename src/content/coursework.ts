@@ -4,7 +4,8 @@ export const coursework = {
     'Modern Statistical Computing (Python/SQL)',
     'Advanced Data Visualization (R)',
     'Object-Oriented Programming (Java)',
+    'The Price System (Econ 01)',
     'Accelerated Multivariable Calculus',
   ],
-  current: ['Intro to Linear Models (Stata)', 'Geographic Information Systems (ArcGIS)'],
+  current: ['Intro to Linear Models (Python)', 'Geographical Information Systems (ArcGIS)'],
 }

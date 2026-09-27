@@ -2,13 +2,22 @@ import type { ExperienceItem } from '../types'
 
 export const experience: ExperienceItem[] = [
   {
+    org: 'TSG Consumer Partners',
+    role: 'Incoming Winter Consumer Insights Intern',
+    location: 'New York, NY',
+    dates: '01/27 – 03/27',
+    bullets: [
+      "Will support TSG's in-house insights team on consumer research for deal diligence and portfolio company strategy, including brand health tracking, survey and alternative data analysis, and AI-enabled reporting tools.",
+    ],
+  },
+  {
     org: 'Applied Hydroclimatology Lab, Dartmouth College',
     role: 'Research Assistant, Neukom Scholar',
     location: 'Hanover, NH',
     dates: '01/25 – Present',
     bullets: [
-      'Build and maintain data pipelines in R to ingest, clean, and validate large, sophisticated datasets, applying statistical analysis and predictive modeling to identify significant trends across noisy real-world data.',
-      'Second author for the 2026 Massachusetts Climate Assessment; collaborated with stakeholders across functions and distilled findings into 20+ publication-ready figures and reports.',
+      'Second author for the 2026 Massachusetts Climate Assessment (Precipitation & Storms chapter); analyzed data from multiple sources and distilled findings into 20+ publication-ready figures and written reports, presenting results and policy-relevant recommendations to regulatory and technical stakeholders.',
+      'Build and maintain data pipelines in R to ingest, clean, and validate large, stochastic climate datasets, applying statistical analysis to identify significant trends across noisy real-world data; increased processing efficiency 50% by leveraging AI tools to streamline data pipelines.',
     ],
   },
   {
@@ -17,8 +26,8 @@ export const experience: ExperienceItem[] = [
     location: 'Stanford, CA',
     dates: '06/23 – 06/24',
     bullets: [
-      'Managed and cleaned high-dimensional environmental datasets in Python and R, applying machine learning and statistical methods (PCA, ANOVA, sPLS-DA) to extract insights across 116 chemical compound features.',
-      'Co-authored an original regional environmental toxin study, structuring raw sample data into a clean schema and communicating technical findings.',
+      'Managed and cleaned high-dimensional health datasets in Python and R, applying machine learning and statistical methods (PCA, ANOVA, and sPLS-DA) to extract insights about Ulcerative Colitis biomarkers across 116 chemical features.',
+      'Co-authored an original regional environmental toxin study, structuring raw sample data inputs into a clean schema and communicating technical findings.',
     ],
     links: [
       {
@@ -37,7 +46,7 @@ export const experience: ExperienceItem[] = [
     location: 'New York, NY',
     dates: '03/23 – 07/25',
     bullets: [
-      'Taught foundational Python, SQL, and Swift concepts through technical workshops, remediation sessions, and hands-on activities.',
+      'Taught foundational Python, SQL, and Swift concepts through technical workshops, remediation sessions, and engaging activities to strengthen students’ data manipulation and problem-solving skills.',
       'Developed clear communication strategies to translate technical concepts for non-technical audiences.',
     ],
   },

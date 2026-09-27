@@ -3,10 +3,9 @@ export const profile = {
   tagline: 'Quantitative Social Science & Geography @ Dartmouth ’28',
   bio: `I build pipelines and visualizations that turn messy real-world data into decisions
     people can act on, often at the intersection of data, geography, and storytelling.
-    Recently: modeling fan demand for professional sports
-    leagues, mapping flood risk for climate scrollytelling, and wrapping up my work on
-    the 2026 Massachusetts Climate Assessment. I'm currently a Neukom Scholar in
-    Dartmouth's Applied Hydroclimatology Lab.`,
+    I'm currently a Neukom Scholar in Dartmouth's Applied Hydroclimatology Lab, and this
+    winter I'm joining TSG Consumer Partners as a consumer insights intern. I'm looking for
+    Summer 2027 internships.`,
   location: 'New York, NY | Palo Alto, CA',
   email: 'isabel.a.prado-tucker.28@dartmouth.edu',
   links: {

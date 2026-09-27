@@ -1,25 +1,32 @@
 export const skillGroups = [
   {
     label: 'Programming',
-    items: ['R', 'Python', 'JavaScript (D3.js)', 'SQL', 'HTML/CSS', 'MATLAB', 'Java', 'Git'],
+    items: ['Python', 'R', 'SQL', 'JavaScript (D3.js)', 'HTML/CSS', 'MATLAB', 'Java', 'Git/Version Control'],
   },
   {
     label: 'Data Analysis',
     items: [
-      'Data Wrangling & Pipelines',
+      'Excel',
+      'GIS',
+      'Data Pipelines',
       'Statistical Analysis',
       'Predictive Modeling',
       'Time-Series Analysis',
       'Data Visualization',
-      'GIS & Spatial Analysis',
     ],
   },
   {
     label: 'Machine Learning & AI',
-    items: ['Regression', 'Random Forest / Gradient Boosting', 'NLP', 'AI-assisted workflows'],
+    items: [
+      'Regression',
+      'Tree-Based Methods (Random Forest, Gradient Boosting)',
+      'NLP',
+      'AI-assisted workflows (Claude Code, GPT)',
+      'SHAP',
+    ],
   },
   {
-    label: 'Additional',
-    items: ['Research Design', 'Stakeholder Communication', 'Data Storytelling']
-  }
+    label: 'Domain Expertise',
+    items: ['Spatial Analysis', 'Consumer Insights', 'Data Storytelling', 'Stakeholder Communication', 'Research Design'],
+  },
 ]
