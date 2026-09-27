@@ -15,7 +15,7 @@ export const projects: Project[] = [
       alt: 'Line chart of spatially averaged extreme precipitation in the Northeast, 1901 to 2024, with the 30-year mean turning from grey to red after the 1992 changepoint.',
     },
     description:
-      'Pinpointed 1992 as the changepoint when Northeast extreme rainfall started climbing.',
+      'Pinpointed 1992 as the year Northeast extreme rainfall started climbing, and turned the finding into an interactive story for non-technical readers.',
     links: [
       { label: 'Live scrollytelling', url: 'https://isabelpt.github.io/MassClimate/' },
       { label: 'GitHub', url: 'https://github.com/isabelpt/MassClimate' },
@@ -35,7 +35,7 @@ export const projects: Project[] = [
       alt: 'Unit chart of Etihad Park seating, each dot one block of fans, filled to show projected attendance against the stadium’s 25,000 capacity.',
     },
     description:
-      "Built transit isochrones to project Gotham FC's move filling 60–91% of Etihad Park.",
+      "Projected Gotham FC's move to Queens will draw 15,000–22,800 fans, up from ~10,900 if they stayed, by modeling how tripling transit reach changes demand.",
     links: [
       //{ label: 'Write-up', url: '' },
       {label: 'Website', url: 'https://gotham-at-etihad.vercel.app/'},
@@ -52,7 +52,7 @@ export const projects: Project[] = [
       alt: 'Stacked bar chart of NWSL headline topic mix from 2012 to 2024, showing coverage volume nearly tripling since 2018 across team/league, coaching, schedule, and how-to-watch topics.',
     },
     description:
-      'Topic-modeled 8,328 headlines to show NWSL media coverage has nearly tripled since 2018.',
+      "Found rivalries lift NWSL attendance ~57%, while market size and winning barely matter, suggesting the league's growth is durable and shaped by front offices.",
     links: [
       //{ label: 'Write-up', url: '' },
       {label: 'Website', url: 'https://nwsl-growth.vercel.app/'},
@@ -69,7 +69,7 @@ export const projects: Project[] = [
       alt: 'E-ink display showing the NWSL table with form and a playoff cutoff line after 8th, beside recent results, xG over- and under-performers, and Goals Added leaders.',
     },
     description:
-      'Built a live NWSL standings and xG dashboard for e-ink, powered by a Cloudflare Worker.',
+      'Shipped a live NWSL standings and xG dashboard as a public plugin on the TRMNL marketplace, so fans get the league at a glance.',
     links: [
       { label: 'TRMNL plugin', url: 'https://trmnl.com/recipes/466603' },
       { label: 'GitHub', url: 'https://github.com/isabelpt/nwsl-analytics-trmnl' },
