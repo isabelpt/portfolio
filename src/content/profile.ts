@@ -25,7 +25,7 @@ export const profile = {
     },
     {
       label: 'Casual Runner & Strava Enthusiast',
-      detail: 'Training for and running half-marathons, while overanalyzing training data.',
+      detail: 'Training for and running half-marathons, while overanalyzing training data. \n Currently training to run the 2027 NYC United Half Marathon with Team for Climate! Donate here: https://www.teamforclimate.org/fundraisers/isabel-prado-tucker',
     },
   ],
 }
