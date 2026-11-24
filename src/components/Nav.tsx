@@ -42,6 +42,7 @@ export default function Nav() {
           ))}
         </ul>
 
+        {/* Resume hidden for now — restore when the updated PDF is back in public/
         <a
           href={profile.resumeUrl}
           download
@@ -49,6 +50,7 @@ export default function Nav() {
         >
           Download Resume
         </a>
+        */}
 
         <button
           type="button"
@@ -73,6 +75,7 @@ export default function Nav() {
                 </a>
               </li>
             ))}
+            {/* Resume hidden for now — restore when the updated PDF is back in public/
             <li>
               <a
                 href={profile.resumeUrl}
@@ -82,6 +85,7 @@ export default function Nav() {
                 Download Resume
               </a>
             </li>
+            */}
           </ul>
         </div>
       )}

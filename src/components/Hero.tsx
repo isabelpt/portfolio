@@ -66,12 +66,23 @@ export default function Hero() {
                 <div key={item.label} className="border-l-2 border-[var(--color-navy-deep)] pl-3">
                   <p className="font-sans text-sm font-medium text-[var(--color-navy-deep)]">{item.label}</p>
                   <p className="mt-0.5 font-sans text-xs text-[var(--color-ink)]/70">{item.detail}</p>
+                  {'link' in item && item.link && (
+                    <a
+                      href={item.link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-1 inline-block font-sans text-xs font-medium text-[var(--color-navy)] underline decoration-[var(--color-lilac)] decoration-2 underline-offset-4 hover:text-[var(--color-navy-deep)]"
+                    >
+                      {item.link.label} ↗
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
           </div>
 
           <div className="mt-6 flex flex-wrap gap-2.5 font-sans text-sm">
+            {/* Resume hidden for now — restore when the updated PDF is back in public/
             <a
               href={profile.resumeUrl}
               download
@@ -79,6 +90,7 @@ export default function Hero() {
             >
               Download Resume
             </a>
+            */}
             <a
               href={profile.links.github}
               target="_blank"

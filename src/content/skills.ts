@@ -7,7 +7,7 @@ export const skillGroups = [
     label: 'Data Analysis',
     items: [
       'Excel',
-      'GIS',
+      'GIS (ArcGIS)',
       'Data Pipelines',
       'Statistical Analysis',
       'Predictive Modeling',
@@ -21,7 +21,7 @@ export const skillGroups = [
       'Regression',
       'Tree-Based Methods (Random Forest, Gradient Boosting)',
       'NLP',
-      'AI-assisted workflows (Claude Code, GPT)',
+      'AI-Assisted Workflows (Claude Code, GPT)',
       'SHAP',
     ],
   },

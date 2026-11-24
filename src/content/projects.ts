@@ -37,9 +37,9 @@ export const projects: Project[] = [
     description:
       "Projected Gotham FC's move to Queens will draw 15,000–22,800 fans, up from ~10,900 if they stayed, by modeling how tripling transit reach changes demand.",
     links: [
-      //{ label: 'Write-up', url: '' },
-      {label: 'Website', url: 'https://gotham-at-etihad.vercel.app/'},
+      { label: 'Website', url: 'https://gotham-at-etihad.vercel.app/' },
       { label: 'GitHub', url: 'https://github.com/isabelpt/nwsl-gotham-relocation' },
+      { label: 'Paper', url: 'https://github.com/isabelpt/nwsl-gotham-relocation/blob/main/paper/Gotham_Paper.pdf' },
     ],
   },
   {
@@ -54,9 +54,9 @@ export const projects: Project[] = [
     description:
       "Found rivalries lift NWSL attendance ~57%, while market size and winning barely matter, suggesting the league's growth is durable and shaped by front offices.",
     links: [
-      //{ label: 'Write-up', url: '' },
-      {label: 'Website', url: 'https://nwsl-growth.vercel.app/'},
-      { label: 'GitHub', url: 'https://github.com/isabelpt/nwsl-growth-analysis'},
+      { label: 'Website', url: 'https://nwsl-growth.vercel.app/' },
+      { label: 'GitHub', url: 'https://github.com/isabelpt/nwsl-growth-analysis' },
+      { label: 'Paper', url: 'https://github.com/isabelpt/nwsl-growth-analysis/blob/main/Prado-Tucker_NWSL_Paper.pdf' },
     ],
   },
   {
